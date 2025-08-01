@@ -2,7 +2,7 @@
 FROM voicevox/voicevox_engine:cpu-ubuntu20.04-latest
 
 # Install all required Python libraries from the project's list
-RUN /opt/python/bin/python3 -m pip install -r requirements.txt
+RUN /opt/python/bin/python3 -m pip install -r /opt/voicevox_engine/requirements.txt
 
 # Expose the port the server runs on
 EXPOSE 50021
