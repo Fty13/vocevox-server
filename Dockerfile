@@ -1,8 +1,8 @@
 # Use the official VOICEVOX engine image
 FROM voicevox/voicevox_engine:cpu-ubuntu20.04-latest
 
-# Install the missing web server libraries
-RUN /opt/python/bin/python3 -m pip install uvicorn gunicorn
+# Install all required Python libraries from the project's list
+RUN /opt/python/bin/python3 -m pip install -r requirements.txt
 
 # Expose the port the server runs on
 EXPOSE 50021
