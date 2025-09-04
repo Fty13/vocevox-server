@@ -1,0 +1,12 @@
+{
+    "autoProcessConfig": {
+        "enabled": false,
+        "scanIntervalSeconds": 60,
+        "rules": [
+            {
+                "deckName": "My Deck",
+                "fieldNames": "Added Date, Another Date Field"
+            }
+        ]
+    }
+}
